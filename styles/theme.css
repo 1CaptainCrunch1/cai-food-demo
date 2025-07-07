@@ -1,42 +1,104 @@
+﻿
 body {
-  background: #111;
-  color: #eee;
-  font-family: 'Segoe UI', sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f5f4f2;
+  color: #333;
 }
 
-.centered-container {
-  background: #1b1b1b;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 0 20px #000;
-  text-align: center;
-  width: 300px;
-}
-
-h1 {
-  margin-bottom: 20px;
-  color: #ffd369;
-}
-
-select, button {
-  margin-top: 15px;
-  padding: 10px;
-  width: 100%;
-  background: #222;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 2rem;
+  background-color: #8B0000;
   color: #fff;
-  border: none;
+}
+
+.navbar nav a {
+  color: #fff;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .btn {
+  background: #ffd369;
+  color: #000;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff3e6;
+}
+
+.menu-section, .about-section, .contact-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  margin-top: 2rem;
+}
+
+.menu-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.menu-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.menu-card h3 {
+  margin: 0.5rem 0 0.2rem;
+}
+
+.menu-card span {
+  display: block;
+  color: #e91e63;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.newsletter-form {
+  margin-top: 2rem;
+}
+
+.newsletter-form input {
+  padding: 0.8rem;
+  width: 70%;
+  margin-right: 1rem;
+  border: 1px solid #ccc;
   border-radius: 6px;
 }
 
-button {
-  background-color: #ffd369;
-  color: #000;
-  font-weight: bold;
-  margin-top: 20px;
+.newsletter-form button {
+  padding: 0.8rem 1.2rem;
+  background: #e91e63;
+  color: white;
+  border: none;
+  border-radius: 6px;
   cursor: pointer;
 }
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: #ccc;
+}
+

@@ -1,22 +1,47 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang='en'>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cai Food Management</title>
-  <link rel="stylesheet" href="styles/theme.css" />
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+  <title>Vietnamese Grab & Go</title>
+  <link rel='stylesheet' href='styles/theme.css' />
 </head>
 <body>
-  <div class="centered-container">
-    <h1>Cai Food Management</h1>
-    <p>Select your role:</p>
-    <select id="roleSelect">
-      <option value="guest">Guest (Customer)</option>
-      <option value="staff">Staff</option>
-      <option value="owner">Owner</option>
-    </select>
-    <button onclick="setRole()">Enter</button>
-  </div>
-  <script src="scripts/auth.js"></script>
+  <header class='navbar'>
+    <h1>Vietnamese Grab & Go</h1>
+    <nav>
+      <a href='#menu'>Menu</a>
+      <a href='#about'>About</a>
+      <a href='#contact'>Contact</a>
+      <a href='login.html' class='btn'>Staff Login</a>
+    </nav>
+  </header>
+  <section class='hero'>
+    <h2>Fresh. Fast. Authentic.</h2>
+    <p>Experience Vietnamese street food in under 5 minutes.</p>
+  </section>
+  <section id='menu' class='menu-section'>
+    <h2>Our Menu</h2>
+    <div class='menu-grid' id='menuGrid'></div>
+  </section>
+  <section id='about' class='about-section'>
+    <h2>About Us</h2>
+    <p>Inspired by Vietnam’s rich food culture, Vietnamese Grab & Go delivers authentic favorites with modern speed. From crispy rice cakes to savory hand pies, our dishes are made to satisfy both tradition and taste.</p>
+  </section>
+  <section id='contact' class='contact-section'>
+    <h2>Contact & Location</h2>
+    <p>📍 123 Bánh Mì Street, Toronto, ON</p>
+    <p>📞 (555) 555-5555</p>
+    <div class='map-placeholder'>[Google Maps Embed Here]</div>
+    <form class='newsletter-form' onsubmit='saveEmail(event)'>
+      <h3>Get Updates & Deals</h3>
+      <input type='email' id='emailSignup' placeholder='Enter your email...' required />
+      <button type='submit'>Sign Up</button>
+    </form>
+  </section>
+  <footer class='footer'>
+    <p>&copy; 2025 Vietnamese Grab & Go. All rights reserved.</p>
+  </footer>
+  <script src='scripts/menu.js'></script>
 </body>
 </html>

@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Dashboard | Cai Food</title>
+  <link rel='stylesheet' href='styles/theme.css'>
+</head>
+<body class='dash-body'>
+  <header class='dash-header'>
+    <h1>🔧 Cai Food Management</h1>
+    <p id='roleDisplay'></p>
+  </header>
+  <nav class='tab-nav'>
+    <button data-tab='inventory'>📦 Inventory</button>
+    <button data-tab='sales'>💰 Sales</button>
+    <button data-tab='costing'>📋 Menu Costing</button>
+    <button data-tab='labor'>👷 Labor</button>
+    <button data-tab='fixed'>🧾 Fixed Costs</button>
+    <button data-tab='chat'>💬 Chat</button>
+    <button data-tab='schedule'>📅 Schedule</button>
+    <button data-tab='dashboard'>📊 Summary</button>
+  </nav>
+  <main id='tabContent'></main>
+  <script src='scripts/auth.js'></script>
+  <script src='scripts/dashboard.js'></script>
+</body>
+</html>

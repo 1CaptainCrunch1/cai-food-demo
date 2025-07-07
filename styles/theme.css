@@ -211,3 +211,38 @@ form button {
   border-radius: 4px;
   cursor: pointer;
 }
+.chat-feed {
+  margin-top: 1rem;
+  max-height: 400px;
+  overflow-y: auto;
+  background: #111;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.chat-bubble {
+  padding: 0.6rem 1rem;
+  background: #1a1a1a;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid gold;
+  border-radius: 6px;
+}
+
+form input#chatMsg {
+  width: 70%;
+  padding: 0.6rem;
+  background: #222;
+  border: 1px solid #444;
+  color: #fff;
+  border-radius: 6px;
+}
+
+form button {
+  padding: 0.6rem 1rem;
+  background: gold;
+  color: #111;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}

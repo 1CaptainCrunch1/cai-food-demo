@@ -375,3 +375,12 @@ form button {
   border-radius: 6px;
   cursor: pointer;
 }
+.summary-card {
+  background: #1e1e1e;
+  margin-bottom: 1rem;
+  padding: 1rem 1.5rem;
+  border-left: 5px solid gold;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-shadow: 0 0 6px #00000066;
+}

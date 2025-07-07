@@ -1,34 +1,71 @@
-﻿const tabs = {
-  inventory: '<h2>📦 Inventory</h2><div id=\"inventoryControls\"></div><div id=\"inventoryTable\"></div>',
-  sales: '<h2>💰 Sales Logs</h2><p>Sales module coming soon.</p>',
-  costing: '<h2>📋 Menu Costing</h2><p>Costing module coming soon.</p>',
-  labor: '<h2>👷 Labor Tracker</h2><p>Labor log coming soon.</p>',
-  fixed: '<h2>🧾 Fixed Costs</h2><p>Rent/utilities input coming soon.</p>',
-  chat: '<h2>💬 Staff Chat</h2><p>Chat feed coming soon.</p>',
-  schedule: '<h2>📅 Weekly Schedule</h2><p>Staff shift calendar coming soon.</p>',
-  dashboard: '<h2>📊 Owner Dashboard</h2><p>Graphs + KPIs loading soon.</p>'
-};
-
-function showTab(tab) {
-  const role = localStorage.getItem('userRole');
-  if (!role) return window.location.href = 'login.html';
-
-  const content = tabs[tab];
-  if (!content) return;
-
-  // Filter tabs for staff
-  const staffRestricted = ['costing', 'labor', 'fixed', 'dashboard'];
-  if (role === 'staff' && staffRestricted.includes(tab)) {
-    document.getElementById('tabContent').innerHTML = '<p>❌ Access denied for staff.</p>';
-  } else {
-    document.getElementById('tabContent').innerHTML = content;
+﻿function renderSummary() {
+  const role = localStorage.getItem("userRole");
+  if (role !== "owner") {
+    document.getElementById("tabContent").innerHTML = "<p>❌ Dashboard only for owner.</p>";
+    return;
   }
 
-  document.getElementById('roleDisplay').innerText = 'Logged in as: ' + role.toUpperCase();
+  const sales = JSON.parse(localStorage.getItem("cai_sales")) || [];
+  const labor = JSON.parse(localStorage.getItem("cai_labor")) || [];
+  const fixed = JSON.parse(localStorage.getItem("cai_fixed")) || [];
+  const inventory = JSON.parse(localStorage.getItem("cai_inventory")) || [];
+
+  const totalRevenue = sales.reduce((acc, s) => acc + parseFloat(s.total || 0), 0);
+  const totalLabor = labor.reduce((acc, l) => acc + (l.hours * l.rate), 0);
+  const totalFixed = fixed.reduce((acc, f) => acc + parseFloat(f.amount || 0), 0);
+  const totalInventory = inventory.reduce((acc, i) => acc + (i.qty * i.cost), 0);
+  const netProfit = totalRevenue - totalLabor - totalFixed;
+  const laborPct = totalRevenue > 0 ? ((totalLabor / totalRevenue) * 100).toFixed(1) : "-";
+
+  const topDish = sales.reduce((acc, s) => {
+    acc[s.dish] = (acc[s.dish] || 0) + s.qty;
+    return acc;
+  }, {});
+
+  let topName = "-";
+  let topQty = 0;
+  for (const dish in topDish) {
+    if (topDish[dish] > topQty) {
+      topQty = topDish[dish];
+      topName = dish;
+    }
+  }
+
+  document.getElementById("tabContent").innerHTML = `
+    <h2>📊 Executive Dashboard</h2>
+    <div class="summary-card"><b>Total Revenue:</b> $${totalRevenue.toFixed(2)}</div>
+    <div class="summary-card"><b>Labor Cost:</b> $${totalLabor.toFixed(2)} (${laborPct}%)</div>
+    <div class="summary-card"><b>Fixed Costs:</b> $${totalFixed.toFixed(2)}</div>
+    <div class="summary-card"><b>Inventory Value:</b> $${totalInventory.toFixed(2)}</div>
+    <div class="summary-card"><b>Net Profit:</b> $${netProfit.toFixed(2)}</div>
+    <div class="summary-card"><b>Top Dish:</b> ${topName} (${topQty} sold)</div>
+  `;
 }
 
-document.querySelectorAll('nav button').forEach(b => {
-  b.addEventListener('click', () => showTab(b.dataset.tab));
+// Tab controller + default load
+document.querySelectorAll("nav button").forEach(b => {
+  b.addEventListener("click", () => showTab(b.dataset.tab));
 });
 
-showTab('dashboard');
+function showTab(tab) {
+  const role = localStorage.getItem("userRole");
+  if (!role) return window.location.href = "login.html";
+
+  document.getElementById("roleDisplay").innerText = "Logged in as: " + role.toUpperCase();
+
+  switch (tab) {
+    case "inventory": return renderInventory();
+    case "sales": return renderSales();
+    case "costing": return renderCosting();
+    case "labor": return renderLabor();
+    case "fixed": return renderFixed();
+    case "chat": return renderChat();
+    case "schedule": return renderSchedule();
+    case "tasks": return renderTasks();
+    case "access": return renderAccessPanel();
+    case "dashboard": return renderSummary();
+    default: document.getElementById("tabContent").innerHTML = "<p>❌ Unknown tab</p>";
+  }
+}
+
+showTab("dashboard");

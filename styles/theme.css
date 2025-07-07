@@ -1,0 +1,42 @@
+body {
+  background: #111;
+  color: #eee;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.centered-container {
+  background: #1b1b1b;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #000;
+  text-align: center;
+  width: 300px;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #ffd369;
+}
+
+select, button {
+  margin-top: 15px;
+  padding: 10px;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+button {
+  background-color: #ffd369;
+  color: #000;
+  font-weight: bold;
+  margin-top: 20px;
+  cursor: pointer;
+}

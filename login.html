@@ -1,19 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang='en'>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Staff Login | Cai Food Management</title>
-  <link rel="stylesheet" href="styles/theme.css" />
+  <meta charset='UTF-8' />
+  <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+  <title>Login | Cai Food Management</title>
+  <link rel='stylesheet' href='styles/theme.css' />
 </head>
-<body>
-  <div class="centered-container">
-    <h2>Staff / Owner Login</h2>
-    <input type="email" id="email" placeholder="Email" required />
-    <input type="password" id="password" placeholder="Password" required />
-    <button onclick="login()">Login</button>
-    <p id="error" style="color:red; margin-top:10px;"></p>
+<body class='login-body'>
+  <div class='login-card'>
+    <h2>Login to Cai Food Portal</h2>
+    <input type='email' id='email' placeholder='Professional Email' />
+    <input type='password' id='password' placeholder='Password' />
+    <button onclick='login()'>Login</button>
+    <p id='error'></p>
   </div>
-  <script src="scripts/auth.js"></script>
+  <script src='scripts/auth.js'></script>
 </body>
 </html>

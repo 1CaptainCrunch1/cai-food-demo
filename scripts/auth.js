@@ -1,24 +1,17 @@
-function login() {
-  const email = document.getElementById("email").value.trim().toLowerCase();
-  const password = document.getElementById("password").value.trim();
-  const errorBox = document.getElementById("error");
+﻿function login() {
+  const email = document.getElementById('email').value.trim().toLowerCase();
+  const password = document.getElementById('password').value.trim();
+  const errorBox = document.getElementById('error');
 
-  if (email === "owner@grabgo.vn" && password === "admin123") {
-    localStorage.setItem("userRole", "owner");
-    window.location.href = "dashboard.html";
-  } else if (email === "staff@grabgo.vn" && password === "staff123") {
-    localStorage.setItem("userRole", "staff");
-    window.location.href = "dashboard.html";
+  const creds = {
+    'admin@grabgo.vn': { pass: 'adminCai01', role: 'owner' },
+    'employee@grabgo.vn': { pass: 'staffCai01', role: 'staff' }
+  };
+
+  if (creds[email] && creds[email].pass === password) {
+    localStorage.setItem('userRole', creds[email].role);
+    window.location.href = 'dashboard.html';
   } else {
-    errorBox.textContent = "Invalid login. Please try again.";
+    errorBox.textContent = '❌ Invalid credentials. Please try again.';
   }
-}
-
-function requireLogin() {
-  const role = localStorage.getItem("userRole");
-  if (!role) window.location.href = "login.html";
-}
-
-function getUserRole() {
-  return localStorage.getItem("userRole");
 }

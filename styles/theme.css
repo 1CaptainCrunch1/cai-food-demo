@@ -76,3 +76,33 @@ main {
   border-radius: 12px;
   box-shadow: 0 0 20px #00000088;
 }
+.cost-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.cost-table th, .cost-table td {
+  padding: 10px;
+  border: 1px solid #555;
+  text-align: left;
+}
+
+.cost-table th {
+  background: #2a2a2a;
+  color: gold;
+}
+
+.cost-table td[contenteditable] {
+  background: #1a1a1a;
+  outline: none;
+}
+
+.cost-table button {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -359,3 +359,19 @@ form button {
   border-radius: 6px;
   cursor: pointer;
 }
+.export-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.export-controls button {
+  padding: 0.6rem 1rem;
+  background: gold;
+  color: black;
+  border: none;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -151,3 +151,33 @@ form button {
   border-radius: 6px;
   cursor: pointer;
 }
+.labor-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.labor-table th, .labor-table td {
+  padding: 10px;
+  border: 1px solid #555;
+  text-align: left;
+}
+
+.labor-table th {
+  background: #2a2a2a;
+  color: gold;
+}
+
+.labor-table td[contenteditable] {
+  background: #1a1a1a;
+  outline: none;
+}
+
+.labor-table button {
+  background: #d11a2a;
+  color: white;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

@@ -1,2 +1,41 @@
 ﻿body { font-family: "DM Sans", "Segoe UI Emoji", sans-serif; }
 nav button { font-size: 16px; margin: 6px; padding: 6px 12px; background: #fff3; border: none; border-radius: 6px; color: #fff; font-weight: bold; }
+body.homepage {
+  background: url("assets/bg-vn.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+  font-family: "DM Sans", sans-serif;
+  color: #222;
+}
+#menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.menuItem {
+  background: rgba(255,255,255,0.88);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+.menuItem h3 {
+  margin-top: 0;
+  color: #d22222;
+}
+.menuItem img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+button {
+  background: #d22222;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+button:hover {
+  background: #aa0000;
+}

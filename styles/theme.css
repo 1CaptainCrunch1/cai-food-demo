@@ -1,142 +1,35 @@
-body.card-root.owner {
-  background: url("assets/bg-mg.jpg") no-repeat center center fixed !important;
-  background-size: cover !important;
-}
-body.card-root.staff {
-  background: #f0f0f0 !important;
-}
-nav.sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  height: 100vh;
-  width: 60px;
-  background: #111a;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 20px;
-  gap: 12px;
-}
-nav.sidebar button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-}
-nav.sidebar button:hover {
-  transform: scale(1.2);
-}
-#sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 60px;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 80px;
-  z-index: 999;
-}
-.tab-button {
-  background: none;
-  border: none;
-  font-size: 22px;
-  margin: 8px 0;
-  color: white;
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.3s ease;
-}
-.tab-button:hover {
-  transform: scale(1.2);
-  color: gold;
-}
-.active-tab {
-  color: #ffce33;
-  font-weight: bold;
-  transform: scale(1.4);
-}
-#sidebar {
-  position: fixed;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  width: 60px;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 80px;
-  z-index: 999;
-}
-.tab-button {
-  background: none;
-  border: none;
-  font-size: 22px;
-  margin: 8px 0;
-  color: white;
-  cursor: pointer;
-  transition: transform 0.2s ease, color 0.3s ease;
-}
-.tab-button:hover {
-  transform: scale(1.2);
-  color: gold;
-}
-.active-tab {
-  color: #ffce33;
-  font-weight: bold;
-  transform: scale(1.4);
-}
-body.homepage {
-  background: url("assets/bg-lg.jpg") no-repeat center center fixed;
-  background-size: cover;
-  font-family: "DM Sans", sans-serif;
-  color: #222;
-}
-#menuGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-.menuItem {
-  background: rgba(255,255,255,0.85);
-  border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-}
-.menuItem h3 {
-  margin-top: 0;
-  color: #b22222;
-}
-body.homepage {
+﻿body.homepage {
   background: url("assets/bg-vn.jpg") no-repeat center center fixed !important;
   background-size: cover !important;
-  font-family: "DM Sans", sans-serif;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
   color: #222;
-  text-align: center;
+  padding-bottom: 80px;
 }
 #menuGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  gap: 24px;
+  padding: 40px;
 }
 .menuItem {
-  background: rgba(255,255,255,0.85);
-  border-radius: 12px;
+  background: rgba(255,255,255,0.88);
+  border-radius: 16px;
   padding: 16px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
 }
-.menuItem h3 {
-  margin-top: 0;
-  color: #b22222;
+.menuItem:hover {
+  transform: translateY(-2px);
 }
 .menuItem img {
   width: 100%;
-  border-radius: 8px;
-  margin-top: 10px;
+  border-radius: 12px;
+}
+.menuItem h3 {
+  margin: 10px 0 4px;
+  color: #991100;
+}
+.menuItem p {
+  margin: 0;
+  font-size: 14px;
 }

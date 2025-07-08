@@ -1,4 +1,4 @@
-﻿# Ignore backup and system files
+﻿# Ignore backups, system files, dev logs
 *.bak
 *.log
 .DS_Store

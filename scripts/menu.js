@@ -15,7 +15,6 @@
   { vn: "Cà phê sữa đá", en: "Vietnamese Iced Coffee", price: 7.00, category: "Core" },
   { vn: "Trà đào", en: "Peach Black Tea", price: 6.50, category: "Core" },
   { vn: "Kem bơ", en: "Avocado Ice Cream", price: 9.00, category: "Core" },
-
   { vn: "Bún thịt nướng", en: "Grilled Pork Vermicelli Bowl", price: 13.25, category: "Expanded" },
   { vn: "Bún chả giò", en: "Noodle Bowl with Fried Rolls", price: 13.25, category: "Expanded" },
   { vn: "Cơm tấm", en: "Broken Rice with Pork & Egg", price: 13.75, category: "Expanded" },
@@ -26,7 +25,6 @@
   { vn: "Bánh mì chay", en: "Vegetarian Banh Mi with Tofu", price: 11.00, category: "Expanded" },
   { vn: "Chè ba màu", en: "Three-Color Coconut Dessert", price: 8.50, category: "Expanded" },
   { vn: "Nước mía", en: "Sugarcane Juice", price: 7.00, category: "Expanded" },
-
   { vn: "Combo Bánh mì + Gỏi cuốn + Drink", en: "Vietnamese Sandwich + Rolls + Drink", price: 20.00, category: "Combo" },
   { vn: "Combo Xôi mặn + Gỏi xoài + Drink", en: "Sticky Rice + Mango Salad + Drink", price: 18.00, category: "Combo" },
   { vn: "Combo Bún + Chả giò + Drink", en: "Vermicelli Bowl + Fried Rolls + Drink", price: 22.00, category: "Combo" },
@@ -55,7 +53,7 @@ function renderMenu() {
 
       card.innerHTML = \
         <div class="card-inner">
-          <img src="assets/placeholder.jpg" alt="\" />
+          <img src="assets/placeholder.png" alt="\" />
           <h4>\</h4>
           <p>\</p>
           <span>CA$\</span>

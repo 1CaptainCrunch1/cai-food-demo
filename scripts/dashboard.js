@@ -1,32 +1,14 @@
-﻿function showTab(tab) {
-  const role = localStorage.getItem("userRole");
-  if (!role) return window.location.href = "login.html";
+window.onload = function () {
+  const user = localStorage.getItem("userEmail") || "";
+  const role = user === "admin@grabgo.vn" ? "owner" : "staff";
+  document.body.classList.add(role);
+  switchTab("dashboard");
+};
 
-  document.getElementById("roleDisplay").innerText = "Logged in as: " + role.toUpperCase();
-
-  switch (tab) {
-    case "inventory": return renderInventory();
-    case "sales": return renderSales();
-    case "costing": return renderCosting();
-    case "labor": return renderLabor();
-    case "fixed": return renderFixed();
-    case "chat": return renderChat();
-    case "schedule": return renderSchedule();
-    case "tasks": return renderTasks();
-    case "access": return renderAccessPanel();
-    case "dashboard": return renderSummary();
-    case "admin": return renderAdminPanel();
-    default: document.getElementById("tabContent").innerHTML = "<p>âŒ Unknown tab</p>";
+function switchTab(tabName) {
+  document.querySelectorAll(".tab").forEach(tab => tab.style.display = "none");
+  const currentTab = document.getElementById(tabName);
+  if (currentTab) {
+    currentTab.style.display = "block";
   }
-}
-
-document.querySelectorAll("nav button").forEach(b => {
-  b.addEventListener("click", () => showTab(b.dataset.tab));
-});
-
-showTab("dashboard");`r`nenableAutoSync();
-
-function renderSummary() {
-  const tab = document.getElementById("tabContent");
-  tab.innerHTML = "<div class='card'>Welcome, loading data...</div>";
 }

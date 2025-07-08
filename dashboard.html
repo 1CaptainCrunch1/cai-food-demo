@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -64,18 +64,18 @@
     }
   </style>
 </head>
-<body>
+<body id="dashBody">
   <div class="dashboard">
     <div class="header">Admin Dashboard</div>
     <div class="tab-buttons">
-      <button onclick="switchTab('inventory')">📦 Inventory</button>
-      <button onclick="switchTab('costing')">💰 Menu Costing</button>
-      <button onclick="switchTab('sales')">📊 Sales</button>
-      <button onclick="switchTab('labor')">👷 Labor</button>
-      <button onclick="switchTab('fixed')">🧾 Fixed Costs</button>
-      <button onclick="switchTab('dashboard')">📈 Dashboard</button>
-      <button onclick="switchTab('admin')">🧑‍💼 Admin</button>
-      <button onclick="switchTab('access')">🔐 Access</button>
+      <button onclick="switchTab('inventory')">?? Inventory</button>
+      <button onclick="switchTab('costing')">?? Menu Costing</button>
+      <button onclick="switchTab('sales')">?? Sales</button>
+      <button onclick="switchTab('labor')">?? Labor</button>
+      <button onclick="switchTab('fixed')">?? Fixed Costs</button>
+      <button onclick="switchTab('dashboard')">?? Dashboard</button>
+      <button onclick="switchTab('admin')">????? Admin</button>
+      <button onclick="switchTab('access')">?? Access</button>
     </div>
     <button class="logout-btn" onclick="logout()">Logout</button>
     <div id="tabContent">Welcome, loading data...</div>
@@ -120,11 +120,11 @@
     window.onload = () => {
       const role = localStorage.getItem("userRole");
       if (role !== "owner") {
-        document.body.innerHTML = "<h2 style='text-align:center'>❌ Access Denied</h2>";
+        document.body.innerHTML = "<h2 style='text-align:center'>? Access Denied</h2>";
         return;
       }
       switchTab("dashboard");
     }
   </script>
-</body>
+  <script src="scripts/owner-bg.js"></script>`n</body>
 </html>

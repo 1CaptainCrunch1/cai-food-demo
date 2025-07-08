@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Ph? Bò",
+    "desc": "Beef noodle soup with herbs",
+    "price": "$12.00",
+    "image": "pho.jpg"
+  },
+  {
+    "name": "Bánh Mì",
+    "desc": "Vietnamese sandwich with pork & veggies",
+    "price": "$9.00",
+    "image": "banhmi.jpg"
+  },
+  {
+    "name": "G?i Cu?n",
+    "desc": "Fresh spring rolls with shrimp",
+    "price": "$7.00",
+    "image": "goicuon.jpg"
+  }
+]

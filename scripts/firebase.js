@@ -1,4 +1,4 @@
-﻿let db;
+let db;
 document.addEventListener("DOMContentLoaded", () => {
   firebase.auth().onAuthStateChanged(user => {
     if (user) {
@@ -14,5 +14,5 @@ function login() {
   const email = document.getElementById("email").value.trim();
   const pass = document.getElementById("password").value.trim();
   firebase.auth().signInWithEmailAndPassword(email, pass)
-    .catch(e => document.getElementById("error").innerText = "❌ " + e.message);
+    .catch(e => document.getElementById("error").innerText = "? " + e.message);
 }

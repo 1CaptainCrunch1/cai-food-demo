@@ -26,3 +26,7 @@ document.querySelectorAll("nav button").forEach(b => {
 
 showTab("dashboard");`r`nenableAutoSync();
 
+function renderSummary() {
+  const tab = document.getElementById("tabContent");
+  tab.innerHTML = "<div class='card'>Welcome, loading data...</div>";
+}

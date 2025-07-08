@@ -41,3 +41,8 @@ window.firebaseSync = {
   saveAll: () => ["inventory","sales","labor","costing","fixed","tasks","chat","schedule","orders"].forEach(saveSheet),
   loadSheet, saveSheet
 };
+if (!localStorage.getItem("seeded")) {
+  caiWrite("inventory", [{ item: "Pho Noodles", qty: 10 }]);
+  caiWrite("sales", [{ item: "Spring Rolls", qty: 5, date: "2025-07-08" }]);
+  localStorage.setItem("seeded", "1");
+}

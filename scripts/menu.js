@@ -30,10 +30,18 @@
 document.addEventListener("DOMContentLoaded", () => {
   const grid = document.getElementById("menuGrid");
   grid.innerHTML = dishes.map(d => `
-    <div class="menu-card" title="${d.en}">
-      <img src="img/${d.img}" alt="${d.vn}">
-      <h3>${d.vn}</h3>
-      <span>${d.price}</span>
+    <div class="menu-card">
+      <div class="menu-card-inner">
+        <div class="menu-card-front">
+          <img src="img/${d.img}" alt="${d.vn}">
+          <h3>${d.vn}</h3>
+          <span>${d.price}</span>
+        </div>
+        <div class="menu-card-back">
+          <h3>${d.en}</h3>
+          <span>${d.price}</span>
+        </div>
+      </div>
     </div>
   `).join('');
 });

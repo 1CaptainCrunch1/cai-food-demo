@@ -1,12 +1,12 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vietnamese Grab & Go</title>
-  <link rel="stylesheet" href="styles/theme.css" />
+  <link rel="stylesheet" href="styles/theme.css"/>
 </head>
-<body>
+<body class="homepage">
   <header class="navbar">
     <h1>Vietnamese Grab & Go</h1>
     <nav>
@@ -24,14 +24,14 @@
     </div>
   </section>
 
-  <section id="menu" class="menu-section">
-    <h2>🍜 Our Menu</h2>
-    <div class="menu-grid" id="menuGrid"></div>
+  <section class="menu-section" id="menu">
+    <h2 class="section-title">🍜 Our Menu</h2>
+    <div id="menuGrid" class="menu-grid"></div>
   </section>
 
   <section id="about" class="about-section">
-    <h2>👨‍🍳 About Us</h2>
-    <p>Founded by Cải Minh Tài, Grab & Go brings authentic Vietnamese cuisine to the streets of Toronto with speed, soul, and quality ingredients.</p>
+    <h2>📙 About Us</h2>
+    <p>Founded by Cái Minh Tài, Grab & Go brings authentic Vietnamese cuisine to the streets of Toronto with speed, soul, and quality ingredients.</p>
   </section>
 
   <section id="contact" class="contact-section">
@@ -49,25 +49,5 @@
   </footer>
 
   <script src="scripts/menu.js"></script>
-
-<script>
-fetch("menu-data.json")
-  .then(res => res.json())
-  .then(data => {
-    const container = document.getElementById("menuGrid");
-    container.innerHTML = data.map(item => `
-      <div class="menuItem">
-        <img src="assets/${item.image}" alt="${item.name}" />
-        <h3>${item.name}</h3>
-        <p>${item.desc}</p>
-        <p><strong>${item.price}</strong></p>
-      </div>
-    `).join('');
-  })
-  .catch(err => {
-    document.getElementById("menuGrid").innerHTML = "<p>Error loading menu.</p>";
-    console.error("Menu load failed:", err);
-  });
-</script>
 </body>
 </html>

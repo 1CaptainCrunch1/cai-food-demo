@@ -1,158 +1,26 @@
 ﻿[
-  {
-    "name": "Bánh mì chả",
-    "price": "$12.00",
-    "description": "Vietnamese pork sausage sandwich",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Bánh mì gà satay halal",
-    "price": "$12.75",
-    "description": "Halal marinated chicken sandwich",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Bánh mì thịt nướng",
-    "price": "$12.75",
-    "description": "Grilled pork bánh mì with pickled veggies",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Bánh mì bò lá lốt",
-    "price": "$13.75",
-    "description": "Betel leaf beef bánh mì",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Xôi mặn",
-    "price": "$11.00",
-    "description": "Sticky rice with meat, egg, and sausage",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Xôi thịt nướng",
-    "price": "$12.00",
-    "description": "Sticky rice with grilled pork",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Xôi chiên",
-    "price": "$11.50",
-    "description": "Fried sticky rice cake with pork floss",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Bánh gối",
-    "price": "$11.00",
-    "description": "2 fried dumplings with pork and noodles",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Gỏi cuốn thịt nướng",
-    "price": "$12.00",
-    "description": "2 pork spring rolls with herbs",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Gỏi cuốn bò lá lốt",
-    "price": "$12.75",
-    "description": "2 beef betel leaf spring rolls",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Gỏi xoài",
-    "price": "$10.75",
-    "description": "Fresh mango salad with herbs",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Gỏi gà",
-    "price": "$11.50",
-    "description": "Chicken cabbage salad with herbs",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Gỏi heo",
-    "price": "$11.50",
-    "description": "Pork and cabbage salad",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Cà phê",
-    "price": "$7.00",
-    "description": "Vietnamese iced coffee with condensed milk",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Trà đào",
-    "price": "$6.50",
-    "description": "Black tea with peach syrup and fruit",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Kem bơ",
-    "price": "$9.00",
-    "description": "Avocado coconut milk ice cream",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Bún thịt nướng",
-    "price": "$13.25",
-    "description": "Grilled pork and vermicelli bowl",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Bún chả giò",
-    "price": "$13.25",
-    "description": "Noodles with spring rolls",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Cơm tấm",
-    "price": "$13.75",
-    "description": "Broken rice with grilled pork and egg",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Chả giò",
-    "price": "$11.00",
-    "description": "2 fried pork spring rolls",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Gỏi cuốn chay",
-    "price": "$10.75",
-    "description": "Veggie spring rolls with tofu",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Xôi gà",
-    "price": "$12.00",
-    "description": "Sticky rice with poached chicken",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Gỏi cuốn tôm",
-    "price": "$12.75",
-    "description": "Shrimp spring rolls with vermicelli",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Bánh mì chay",
-    "price": "$11.00",
-    "description": "Veggie bánh mì with tofu and mushroom",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Chè ba màu",
-    "price": "$8.50",
-    "description": "Three-color dessert with coconut milk",
-    "image": "assets/placeholder.png"
-  },
-  {
-    "name": "Nước mía",
-    "price": "$7.00",
-    "description": "Fresh sugarcane juice",
-    "image": "assets/placeholder.png"
-  }
+    {
+        "price":  12.99,
+        "img":  "pho.jpg",
+        "name":  "Phở Bò",
+        "desc":  "Vietnamese beef noodle soup"
+    },
+    {
+        "price":  6.5,
+        "img":  "banhmi.jpg",
+        "name":  "Bánh Mì",
+        "desc":  "Toasted Vietnamese sandwich"
+    },
+    {
+        "price":  5.99,
+        "img":  "goicuon.jpg",
+        "name":  "Gỏi Cuốn",
+        "desc":  "Fresh spring rolls"
+    },
+    {
+        "price":  11,
+        "img":  "buncha.jpg",
+        "name":  "Bún Chả",
+        "desc":  "Grilled pork with noodles"
+    }
 ]

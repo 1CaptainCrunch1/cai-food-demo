@@ -1,26 +1,184 @@
-﻿[
-    {
-        "price":  12.99,
-        "img":  "pho.jpg",
-        "name":  "Phở Bò",
-        "desc":  "Vietnamese beef noodle soup"
-    },
-    {
-        "price":  6.5,
-        "img":  "banhmi.jpg",
-        "name":  "Bánh Mì",
-        "desc":  "Toasted Vietnamese sandwich"
-    },
-    {
-        "price":  5.99,
-        "img":  "goicuon.jpg",
-        "name":  "Gỏi Cuốn",
-        "desc":  "Fresh spring rolls"
-    },
-    {
-        "price":  11,
-        "img":  "buncha.jpg",
-        "name":  "Bún Chả",
-        "desc":  "Grilled pork with noodles"
-    }
+[
+  {
+    "name": "Phở Bò",
+    "desc": "Vietnamese beef noodle soup",
+    "price": "$12.99",
+    "image": "pho_bo.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Phở Gà",
+    "desc": "Chicken rice noodle soup",
+    "price": "$11.99",
+    "image": "pho_ga.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Bún Bò Huế",
+    "desc": "Spicy beef noodle soup",
+    "price": "$13.99",
+    "image": "bun_bo_hue.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Bánh Mì Thịt",
+    "desc": "Vietnamese baguette sandwich with pork",
+    "price": "$7.50",
+    "image": "banhmi_thit.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Bánh Mì Gà",
+    "desc": "Chicken baguette sandwich",
+    "price": "$7.50",
+    "image": "banhmi_ga.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Cơm Tấm Sườn",
+    "desc": "Broken rice with grilled pork chop",
+    "price": "$10.50",
+    "image": "com_tam_suon.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Gỏi Cuốn",
+    "desc": "Fresh spring rolls with shrimp and pork",
+    "price": "$6.00",
+    "image": "goi_cuon.jpg",
+    "category": "sides"
+  },
+  {
+    "name": "Chả Giò",
+    "desc": "Fried egg rolls",
+    "price": "$5.50",
+    "image": "cha_gio.jpg",
+    "category": "sides"
+  },
+  {
+    "name": "Bánh Xèo",
+    "desc": "Crispy Vietnamese pancakes with shrimp and pork",
+    "price": "$9.00",
+    "image": "banh_xeo.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Hủ Tiếu Nam Vang",
+    "desc": "Phnom Penh style noodle soup",
+    "price": "$12.00",
+    "image": "hu_tieu_nam_vang.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Bún Thịt Nướng",
+    "desc": "Grilled pork over vermicelli",
+    "price": "$11.50",
+    "image": "bun_thit_nuong.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Chè Ba Màu",
+    "desc": "Three-color dessert with mung bean, jelly, and coconut",
+    "price": "$4.50",
+    "image": "che_ba_mau.jpg",
+    "category": "dessert"
+  },
+  {
+    "name": "Chè Đậu Đen",
+    "desc": "Sweet black bean dessert",
+    "price": "$4.00",
+    "image": "che_dau_den.jpg",
+    "category": "dessert"
+  },
+  {
+    "name": "Nước Mía",
+    "desc": "Fresh sugarcane juice",
+    "price": "$3.50",
+    "image": "nuoc_mia.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "Sữa Đậu Nành",
+    "desc": "Sweet soy milk",
+    "price": "$3.00",
+    "image": "sua_dau_nanh.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "Trà Đá",
+    "desc": "Iced tea",
+    "price": "$2.00",
+    "image": "tra_da.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "Cà Phê Sữa Đá",
+    "desc": "Vietnamese iced coffee with milk",
+    "price": "$4.50",
+    "image": "ca_phe_sua_da.jpg",
+    "category": "drink"
+  },
+  {
+    "name": "Bánh Bò",
+    "desc": "Steamed rice cakes",
+    "price": "$4.00",
+    "image": "banh_bo.jpg",
+    "category": "dessert"
+  },
+  {
+    "name": "Bánh Flan",
+    "desc": "Vietnamese caramel custard",
+    "price": "$4.25",
+    "image": "banh_flan.jpg",
+    "category": "dessert"
+  },
+  {
+    "name": "Bò Kho",
+    "desc": "Vietnamese beef stew with carrots",
+    "price": "$13.50",
+    "image": "bo_kho.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Xôi Mặn",
+    "desc": "Savory sticky rice with sausage, egg, pork",
+    "price": "$9.50",
+    "image": "xoi_man.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Mì Quảng",
+    "desc": "Turmeric rice noodles with pork and shrimp",
+    "price": "$12.75",
+    "image": "mi_quang.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Gà Rán",
+    "desc": "Vietnamese-style fried chicken",
+    "price": "$10.00",
+    "image": "ga_ran.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Rau Muống Xào",
+    "desc": "Stir-fried water spinach with garlic",
+    "price": "$6.00",
+    "image": "rau_muong.jpg",
+    "category": "sides"
+  },
+  {
+    "name": "Canh Chua Cá",
+    "desc": "Vietnamese sour fish soup",
+    "price": "$11.00",
+    "image": "canh_chua.jpg",
+    "category": "main"
+  },
+  {
+    "name": "Chè Khúc Bạch",
+    "desc": "Lychee almond jelly dessert",
+    "price": "$5.00",
+    "image": "che_khuc_bach.jpg",
+    "category": "dessert"
+  }
 ]

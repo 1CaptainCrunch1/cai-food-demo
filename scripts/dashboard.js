@@ -1,4 +1,4 @@
-function showTab(tab) {
+﻿function showTab(tab) {
   const role = localStorage.getItem("userRole");
   if (!role) return window.location.href = "login.html";
 
@@ -16,7 +16,7 @@ function showTab(tab) {
     case "access": return renderAccessPanel();
     case "dashboard": return renderSummary();
     case "admin": return renderAdminPanel();
-    default: document.getElementById("tabContent").innerHTML = "<p>❌ Unknown tab</p>";
+    default: document.getElementById("tabContent").innerHTML = "<p>âŒ Unknown tab</p>";
   }
 }
 
@@ -24,4 +24,5 @@ document.querySelectorAll("nav button").forEach(b => {
   b.addEventListener("click", () => showTab(b.dataset.tab));
 });
 
-showTab("dashboard");
+showTab("dashboard");`r`nenableAutoSync();
+

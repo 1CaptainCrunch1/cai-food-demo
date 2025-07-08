@@ -68,3 +68,35 @@ body.homepage {
   font-size: 14px;
   margin: 2px 0;
 }
+body.homepage {
+  background: url("assets/bg-vn.jpg") no-repeat center center fixed !important;
+  background-size: cover !important;
+  font-family: "DM Sans", "Segoe UI", sans-serif;
+  color: #222;
+}
+#menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.menuItem {
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  text-align: center;
+}
+.menuItem img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.menuItem h3 {
+  font-size: 18px;
+  margin: 8px 0 4px;
+}
+.menuItem p {
+  font-size: 14px;
+  margin: 2px 0;
+}

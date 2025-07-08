@@ -1,20 +1,44 @@
-[
+﻿[
   {
-    "name": "Ph? B�",
-    "desc": "Beef noodle soup with herbs",
+    "name": "Bánh mì chả",
+    "desc": "Pork Sausage Baguette",
     "price": "$12.00",
-    "image": "pho.jpg"
-  },
-  {
-    "name": "B�nh M�",
-    "desc": "Vietnamese sandwich with pork & veggies",
-    "price": "$9.00",
     "image": "banhmi.jpg"
   },
   {
-    "name": "G?i Cu?n",
-    "desc": "Fresh spring rolls with shrimp",
-    "price": "$7.00",
+    "name": "Bánh mì gà satay",
+    "desc": "Halal Chicken Satay",
+    "price": "$12.75",
+    "image": "satay.jpg"
+  },
+  {
+    "name": "Bánh mì thịt nướng",
+    "desc": "Chargrilled Pork Baguette",
+    "price": "$12.75",
+    "image": "thitnuong.jpg"
+  },
+  {
+    "name": "Gỏi cuốn thịt nướng",
+    "desc": "Pork Spring Rolls",
+    "price": "$12.00",
     "image": "goicuon.jpg"
+  },
+  {
+    "name": "Gỏi xoài",
+    "desc": "Mango Salad",
+    "price": "$10.75",
+    "image": "mango.jpg"
+  },
+  {
+    "name": "Xôi mặn",
+    "desc": "Sticky Rice with Egg & Sausage",
+    "price": "$11.00",
+    "image": "xoi.jpg"
+  },
+  {
+    "name": "Cà phê sữa đá",
+    "desc": "Vietnamese Iced Coffee",
+    "price": "$7.00",
+    "image": "coffee.jpg"
   }
 ]

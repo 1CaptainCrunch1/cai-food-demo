@@ -1,50 +1,10 @@
-[
-  {
-    "name": "Phở Bò",
-    "price": "$13.99",
-    "description": "Vietnamese beef noodle soup",
-    "img": "assets/pho-bo.png"
-  },
-  {
-    "name": "Phở Gà",
-    "price": "$12.99",
-    "description": "Chicken noodle soup",
-    "img": "assets/pho-ga.png"
-  },
-  {
-    "name": "Bánh Mì Đặc Biệt",
-    "price": "$8.50",
-    "description": "Vietnamese special sandwich",
-    "img": "assets/banhmi.png"
-  },
-  {
-    "name": "Gỏi Cuốn",
-    "price": "$6.00",
-    "description": "Fresh spring rolls",
-    "img": "assets/goi-cuon.png"
-  },
-  {
-    "name": "Bún Thịt Nướng",
-    "price": "$11.50",
-    "description": "Grilled pork with vermicelli",
-    "img": "assets/bun-thit.png"
-  },
-  {
-    "name": "Cà Phê Sữa Đá",
-    "price": "$4.50",
-    "description": "Vietnamese iced coffee",
-    "img": "assets/coffee.png"
-  },
-  {
-    "name": "Bánh Xèo",
-    "price": "$9.00",
-    "description": "Vietnamese crispy pancake",
-    "img": "assets/banh-xeo.png"
-  },
-  {
-    "name": "Chè Ba Màu",
-    "price": "$5.00",
-    "description": "Three-color dessert",
-    "img": "assets/che-ba-mau.png"
-  }
+﻿[
+  { "name": "Phở Bò", "price": "$13.99", "description": "Vietnamese beef noodle soup", "img": "assets/placeholder.png" },
+  { "name": "Phở Gà", "price": "$12.99", "description": "Chicken noodle soup", "img": "assets/placeholder.png" },
+  { "name": "Bánh Mì Đặc Biệt", "price": "$8.50", "description": "Vietnamese special sandwich", "img": "assets/placeholder.png" },
+  { "name": "Gỏi Cuốn", "price": "$6.00", "description": "Fresh spring rolls", "img": "assets/placeholder.png" },
+  { "name": "Bún Thịt Nướng", "price": "$11.50", "description": "Grilled pork with vermicelli", "img": "assets/placeholder.png" },
+  { "name": "Cà Phê Sữa Đá", "price": "$4.50", "description": "Vietnamese iced coffee", "img": "assets/placeholder.png" },
+  { "name": "Bánh Xèo", "price": "$9.00", "description": "Vietnamese crispy pancake", "img": "assets/placeholder.png" },
+  { "name": "Chè Ba Màu", "price": "$5.00", "description": "Three-color dessert", "img": "assets/placeholder.png" }
 ]

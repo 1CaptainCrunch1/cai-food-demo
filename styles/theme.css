@@ -1,4 +1,4 @@
-body.homepage {
+﻿body.homepage {
   background: url('/cai-food-demo/assets/bg-vn.jpg') no-repeat center center fixed !important;
   background-size: cover !important;
   font-family: "DM Sans", "Segoe UI", sans-serif;
@@ -100,3 +100,4 @@ body.homepage {
   font-size: 14px;
   margin: 2px 0;
 }
+

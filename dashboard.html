@@ -1,1 +1,24 @@
-
+﻿<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <title>Dashboard | Cai Food Management</title>
+  <link rel='stylesheet' href='styles/theme.css'>
+</head>
+<body class='dashboard-body'>
+  <header>
+    <h1>Admin Dashboard</h1>
+    <nav>
+      <button onclick="switchTab('inventory')">📦 Inventory</button>
+      <button onclick="switchTab('menuCosting')">💰 Menu Costing</button>
+      <button onclick="switchTab('sales')">💼 Sales</button>
+      <button onclick="switchTab('labor')">👷 Labor</button>
+      <button onclick="switchTab('fixedCosts')">🧾 Fixed Costs</button>
+      <button onclick="switchTab('dashboard')">📊 Dashboard</button>
+    </nav>
+  </header>
+  <main id='dashboardContent'></main>
+  <script src='scripts/dashboard.js'></script>
+</body>
+</html>

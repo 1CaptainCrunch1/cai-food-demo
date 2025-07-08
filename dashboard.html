@@ -42,13 +42,25 @@
       background: rgba(255,255,255,0.25);
     }
     #tabContent {
-      background: rgba(0,0,0,0.5);
+      background: rgba(0,0,0,0.6);
       border-radius: 12px;
       padding: 20px;
       margin: 0 auto;
       width: 90%;
       max-width: 1100px;
       box-shadow: 0 0 30px rgba(0,0,0,0.3);
+    }
+    .logout-btn {
+      position: fixed;
+      top: 12px;
+      right: 18px;
+      padding: 10px 14px;
+      background: #c00;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
     }
   </style>
 </head>
@@ -65,10 +77,11 @@
       <button onclick="switchTab('admin')">🧑‍💼 Admin</button>
       <button onclick="switchTab('access')">🔐 Access</button>
     </div>
+    <button class="logout-btn" onclick="logout()">Logout</button>
     <div id="tabContent">Welcome, loading data...</div>
   </div>
 
-  <!-- Scripts -->
+  <!-- Firebase & App -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
@@ -96,7 +109,14 @@
         case "access": return renderAccessPanel();
       }
     }
-    // Auto-load dashboard or inventory
+
+    function logout() {
+      firebase.auth().signOut().then(() => {
+        localStorage.clear();
+        window.location.href = "login.html";
+      });
+    }
+
     window.onload = () => {
       const role = localStorage.getItem("userRole");
       if (role !== "owner") {

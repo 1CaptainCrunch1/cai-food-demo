@@ -1,44 +1,15 @@
 ﻿[
-  {
-    "name": "Bánh mì chả",
-    "desc": "Pork Sausage Baguette",
-    "price": "$12.00",
-    "image": "banhmi.jpg"
-  },
-  {
-    "name": "Bánh mì gà satay",
-    "desc": "Halal Chicken Satay",
-    "price": "$12.75",
-    "image": "satay.jpg"
-  },
-  {
-    "name": "Bánh mì thịt nướng",
-    "desc": "Chargrilled Pork Baguette",
-    "price": "$12.75",
-    "image": "thitnuong.jpg"
-  },
-  {
-    "name": "Gỏi cuốn thịt nướng",
-    "desc": "Pork Spring Rolls",
-    "price": "$12.00",
-    "image": "goicuon.jpg"
-  },
-  {
-    "name": "Gỏi xoài",
-    "desc": "Mango Salad",
-    "price": "$10.75",
-    "image": "mango.jpg"
-  },
-  {
-    "name": "Xôi mặn",
-    "desc": "Sticky Rice with Egg & Sausage",
-    "price": "$11.00",
-    "image": "xoi.jpg"
-  },
-  {
-    "name": "Cà phê sữa đá",
-    "desc": "Vietnamese Iced Coffee",
-    "price": "$7.00",
-    "image": "coffee.jpg"
-  }
+  { "name": "Bánh mì chả", "desc": "Pork Sausage Sandwich", "price": "$12.00", "category": "Core", "image": "banhmi_cha.jpg" },
+  { "name": "Bánh mì gà satay", "desc": "Halal Chicken Satay Bánh Mì", "price": "$12.75", "category": "Core", "image": "banhmi_satay.jpg" },
+  { "name": "Bánh mì thịt nướng", "desc": "Grilled Pork Sandwich", "price": "$12.75", "category": "Core", "image": "banhmi_pork.jpg" },
+  { "name": "Bánh mì bò lá lốt", "desc": "Betel Leaf Beef Sandwich", "price": "$13.75", "category": "Core", "image": "banhmi_betel.jpg" },
+  { "name": "Bún thịt nướng", "desc": "Grilled Pork Noodle Bowl", "price": "$13.25", "category": "Core", "image": "bun_pork.jpg" },
+  { "name": "Cơm tấm", "desc": "Broken Rice with Pork & Egg", "price": "$13.75", "category": "Core", "image": "comtam.jpg" },
+  { "name": "Xôi mặn", "desc": "Savory Sticky Rice Combo", "price": "$11.00", "category": "Core", "image": "xoi_man.jpg" },
+  { "name": "Gỏi cuốn chay", "desc": "Veggie Spring Rolls", "price": "$10.75", "category": "Core", "image": "goi_chay.jpg" },
+  { "name": "Gỏi xoài", "desc": "Mango Herb Salad", "price": "$10.75", "category": "Core", "image": "goi_xoai.jpg" },
+  { "name": "Kem bơ", "desc": "Avocado Coconut Ice Cream", "price": "$9.00", "category": "Dessert", "image": "kem_bo.jpg" },
+  { "name": "Chè ba màu", "desc": "3-Color Sweet Bean Dessert", "price": "$8.50", "category": "Dessert", "image": "che_3mau.jpg" },
+  { "name": "Cà phê sữa đá", "desc": "Vietnamese Iced Coffee", "price": "$7.00", "category": "Drink", "image": "cafe.jpg" },
+  { "name": "Trà đào", "desc": "Peach Tea", "price": "$6.50", "category": "Drink", "image": "tra_dao.jpg" }
 ]

@@ -1,9 +1,10 @@
 ﻿const firebaseConfig = {
-  apiKey: "YOUR_API_KEY_HERE",
-  authDomain: "your-project.firebaseapp.com",
-  projectId: "your-project-id",
-  storageBucket: "your-project.appspot.com",
-  messagingSenderId: "123456789",
-  appId: "YOUR_APP_ID_HERE"
+  apiKey: "AIzaSyA5BPgDWNk2ATnReD8NHeD0_WMf1AISSWE",
+  authDomain: "cai-food.firebaseapp.com",
+  projectId: "cai-food",
+  storageBucket: "cai-food.firebasestorage.app",
+  messagingSenderId: "379750371996",
+  appId: "1:379750371996:web:d6100801344eceb5835359",
+  measurementId: "G-918QGVWCQ2"
 };
 firebase.initializeApp(firebaseConfig);

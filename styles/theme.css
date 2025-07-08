@@ -148,3 +148,31 @@ body.homepage {
 .menu-card span {
   font-size: 1rem;
 }
+
+/* === PHASE 34B: Contrast Fixes === */
+.menu-card-front, .menu-card-back {
+  background: rgba(255, 255, 255, 0.92);
+  color: #222;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+.menu-card h3 {
+  color: gold;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.menu-card span {
+  color: #fefefe;
+  font-weight: bold;
+}
+.menu-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 18px rgba(255, 211, 105, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+.menu-card-inner {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.menu-card-front img {
+  border-bottom: 3px solid gold;
+}

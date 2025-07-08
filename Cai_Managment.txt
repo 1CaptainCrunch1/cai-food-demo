@@ -1,0 +1,221 @@
+SYSTEM STRUCTURE OVERVIEW
+1. 🌐 Customer Website (Public)
+High-end Vietnamese restaurant UI (inspired by Akuna/PhoTran)
+
+Sections:
+
+📸 Landing Page
+
+🍱 Menu Grid with placeholder photos
+
+🧑‍🍳 About the Concept
+
+📍 Contact Info (with Google Maps)
+
+🛒 Order Now Button (optional form or link)
+
+Mobile-optimized, designed for food photos, real branding ready
+
+2. 🔐 Owner Portal
+Private login area (via dropdown or Firebase Auth later)
+
+Access to:
+
+📦 Inventory Sheet
+
+💰 Menu Costing Sheet
+
+💼 Sales Sheet
+
+👷 Labor Sheet
+
+🧾 Fixed Costs Sheet
+
+📊 Dashboard with:
+
+Food cost %
+
+Labor %
+
+Total gross/net profit
+
+Built-in margin calculator:
+
+Auto-calculates cost per dish, profit per unit, profit margin %
+
+Real-time updates via connected Google Sheet or Firebase JSON
+
+3. 👨‍🍳 Staff Portal
+Login view restricted to:
+
+Inventory input (add stock, mark depletion)
+
+Sales log entries (by day/item/price)
+
+📅 Scheduling Module (simple weekly shift view)
+
+💬 Internal Chat (dummy or Firebase-based)
+
+Staff cannot see costing, payroll, or dashboard
+
+4. 📊 Connected Google Sheet System
+All editable and shareable by the owner:
+
+Sheet Tabs:
+Tab Name	Columns Included
+Inventory	Item, Category, Unit, Stock, Par Level, Unit Cost, Value
+Sales	Date, Item, Qty Sold, Unit Price, Total Sales
+Menu Costing	Dish, Ingredients, Qty Used, Cost Per Unit, Selling Price, Margin %
+Labor	Name, Role, Hours, Wage, Total Pay, Date
+Fixed Costs	Description, Amount, Frequency
+Dashboard	Formulas for Food %, Labor %, Net Profit
+
+
+🌐 1. Public-Facing Customer Website
+Akuna/PhoTran style
+
+Pages:
+
+📸 Landing Page
+
+🍜 Menu Grid (with placeholders and real prices)
+
+🧑‍🍳 About Us
+
+📍 Contact + Google Map Embed
+
+✉️ Newsletter Signup (stores locally or expands into Firebase later)
+
+🛒 “Order Now” button (optional future expansion)
+
+Fully mobile-friendly
+
+This replaces index.html
+
+🔐 2. Owner Portal
+Accessible only via /dashboard.html after login (owner@grabgo.vn)
+
+Tabs:
+
+📦 Inventory
+
+💰 Menu Costing
+
+💼 Sales
+
+👷 Labor
+
+🧾 Fixed Costs
+
+📊 Dashboard (food %, labor %, gross/net)
+
+Built-in:
+
+🔢 Real-time Margin Calculators
+
+🔗 Expandable to Firebase or Sheets API later
+
+👨‍🍳 3. Staff Portal
+Accessible via /dashboard.html if logged in as Staff (staff@grabgo.vn)
+
+Access to:
+
+📦 Inventory (quantity adjustment)
+
+💼 Sales Logs
+
+📅 Scheduling View
+
+💬 Chat Module
+
+❌ No access to cost sheets, payroll, or profit dashboard
+
+📈 4. Built-In Data Engine
+No Google Sheets
+
+All logic and data flow custom-built
+
+JSON-powered
+
+Editable tables with margin/profit logic auto-calculated
+
+
+🧾 CAI FOOD MANAGEMENT – FULL SYSTEM SPEC (2025 EDITION)
+🧱 MASTER STRUCTURE OVERVIEW
+🌐 1. Public-Facing Customer Website
+Inspired by: Akuna, PhoTran, Vietnamese street food culture
+
+Design Requirements:
+
+✅ Vietnamese-themed layout
+
+✅ Gold + Black + Red tones
+
+✅ High-end, photo-driven UI
+
+✅ Mobile-first responsive layout
+
+✅ Background: non-plain, textured (bamboo, wood, paper, etc.)
+
+✅ Real fonts (e.g., Inter, Noto Sans, DM Sans)
+
+Content Sections:
+
+📸 Hero Landing Section
+
+🍜 Menu Grid (with placeholder food images, price, translation)
+
+🧑‍🍳 About Us blurb
+
+📍 Contact Section w/ Google Maps placeholder
+
+✉️ Newsletter Signup
+
+🛒 “Order Now” button (form or link ready)
+
+🔐 Staff Login button → links to /login.html
+
+🔐 2. Owner Portal (/dashboard.html)
+Accessible via login: admin@grabgo.vn / adminCai01
+
+Tabs Available to Owner:
+
+Tab Name	Features
+📦 Inventory	Add/edit/delete items, cost tracking, reorder level, auto total calc
+💰 Menu Costing	Ingredient-level cost per dish, margin %, profit per dish
+💼 Sales Logs	Add/view sales records with date, item, qty, price
+👷 Labor	Staff hours, rate, payroll cost, % of total sales
+🧾 Fixed Costs	Rent, utilities, static expenses
+📊 Dashboard	Auto summary of food %, labor %, net profit (real-time calc)
+🔧 System Access	Edit users (future), export data (future)
+
+👨‍🍳 3. Staff Portal (also /dashboard.html)
+Accessible via login: employee@grabgo.vn / staffCai01
+
+Tabs Visible to Staff:
+
+Tab Name	Access	Description
+📦 Inventory	✅ View + Edit Qty only	
+💼 Sales Logs	✅ Add sales entries	
+📅 Scheduling	✅ View weekly shift (basic calendar layout)	
+💬 Chat Module	✅ Write messages in team chat board	
+❌ No Access	❌ Menu Costing / Labor / Fixed / Dashboard	
+
+🧮 4. Built-In Data Engine (No Google Sheets)
+How It Works:
+
+Uses localStorage and/or JSON stubs
+
+Auto-calculates:
+
+Profit/unit
+
+Margin %
+
+Cost of goods sold (COGS)
+
+Labor %
+
+Editable tables (cell contenteditable)
+
+Expandable later to Firebase 

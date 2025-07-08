@@ -1,0 +1,11 @@
+﻿<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$">
+      <sourceFolder url="file://$/scripts" isTestSource="false" />
+      <sourceFolder url="file://$/styles" isTestSource="false" />
+      <sourceFolder url="file://$/assets" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

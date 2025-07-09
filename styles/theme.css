@@ -1,7 +1,7 @@
 body.homepage {
   background: url('/cai-food-demo/assets/bg-vn.jpg') no-repeat center center fixed !important;
   background-size: cover !important;
-  font-family: "DM Sans', 'Noto Sans', 'Segoe UI', sans-serif", "Segoe UI", sans-serif;
+  font-family: "DM Sans", 'Noto Sans', 'Segoe UI', sans-serif, "Segoe UI", sans-serif;
   color: #222;
   padding-bottom: 80px;
 }
@@ -1060,7 +1060,7 @@ body {
   color: #f0f0f0;
 }
 
-/* === Phase 2M – Navbar Polish === */
+/* === Phase 2M ï¿½ Navbar Polish === */
 .navbar {
   display: flex;
   flex-direction: column;
@@ -1087,37 +1087,52 @@ body {
 }
 
 .nav-links {
-  display: flex;
-  gap: 1.25rem;
-  flex-wrap: wrap;
+ display: flex;
+ gap: 20px; /* Increased padding between buttons */
+ flex-wrap: wrap;
+ font-size: 1.05rem; /* Consistent font size */
+ justify-content: center; /* Center buttons horizontally */
 }
 
 .nav-links a {
   color: #ffdbb5;
-  text-decoration: none;
+ text-decoration: none;
   font-weight: 500;
   transition: all 0.3s ease;
+  font-size: 1rem; /* Ensure consistent font size */
+  padding: 0 0.75rem; /* Adjusted padding */
 }
 
 .nav-links a:hover {
   color: #fff;
   text-shadow: 0 0 4px #ffcc99;
+
 }
 
 .login-btn {
-  padding: 0.3rem 0.8rem;
-  background-color: #e63946;
-  border-radius: 6px;
+  padding: 0.3rem 0.8rem; background-color: #e63946; border-radius: 6px;
   color: #fff !important;
   font-weight: bold;
   margin-left: 1rem;
 }
 
 .login-btn:hover {
+  transform: scale(1.05); /* Subtle scaling effect */
   background-color: #d62828;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3); /* Add subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth transition */
+}
+/* Specific hover animation for staff login button */
+.nav-links a:last-child:hover {
+  transform: scale(1.05); /* Apply scaling to the last link (Staff Login) */
+/* Mobile responsiveness: Stack buttons vertically */
+@media (max-width: 768px) {
+ .nav-links {
+    flex-direction: column;
+ }
 }
 
-/* === Phase 2N – Menu Card Polish === */
+/* === Phase 2N ï¿½ Menu Card Polish === */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -1205,7 +1220,7 @@ body {
   background: rgba(255, 255, 255, 0.25);
 }
 
-/* Phase 2M — Top bar polish and about section */
+/* Phase 2M ï¿½ Top bar polish and about section */
 .site-title {
   font-family: 'DM Sans', sans-serif;
   font-size: 1.5rem;
@@ -1249,13 +1264,13 @@ body {
   font-size: 1.4rem;
 }
 
-/* Phase 2O — Header Title Patch */
+/* Phase 2O ï¿½ Header Title Patch */
 .site-title {
   text-transform: none;
   letter-spacing: 0.5px;
 }
 
-/* Phase 2O-R — Clean Title Override */
+/* Phase 2O-R ï¿½ Clean Title Override */
 .site-title {
   font-family: "DM Sans", sans-serif;
   font-size: 1.6rem;
@@ -1263,7 +1278,7 @@ body {
   font-weight: 700;
   padding-left: 0.5rem;
 }
-/* Phase 2P — Hero Polish */
+/* Phase 2P ï¿½ Hero Polish */
 .hero {
   margin-top: 2rem;
   text-align: center;
@@ -1291,7 +1306,7 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
-/* Phase 2P — Header & Menu Visibility Fix */
+/* Phase 2P ï¿½ Header & Menu Visibility Fix */
 .brand-title {
   font-size: 1.6rem;
   font-weight: 700;
@@ -1309,7 +1324,7 @@ body {
   padding-left: 0.5rem;
 }
 
-/* Phase 2Q — Hero sizing and top section cleanup */
+/* Phase 2Q ï¿½ Hero sizing and top section cleanup */
 .hero {
   margin-top: 2.5rem !important;
   padding: 2rem;
@@ -1338,7 +1353,7 @@ body {
 .brand-title {
   text-shadow: 0 1px 6px rgba(0,0,0,0.8);
 }
-/* Phase 2P — Brand name + Our Menu contrast fix */
+/* Phase 2P ï¿½ Brand name + Our Menu contrast fix */
 .brand-wrap {
   display: flex;
   align-items: center;
@@ -1356,7 +1371,7 @@ body {
   text-shadow: 1px 1px 2px #000000aa;
   margin-bottom: 1rem;
 }
-/* Phase 2Q – Scroll behavior + card glow + background polish */
+/* Phase 2Q ï¿½ Scroll behavior + card glow + background polish */
 html {
   scroll-behavior: smooth;
 }

@@ -495,3 +495,508 @@ Add-Content .\styles\theme.css @'
 body {
   font-family: "DM Sans', 'Noto Sans', 'Segoe UI', sans-serif", "Segoe UI", "Noto Sans", Arial, sans-serif;
 }
+body.homepage {
+  background: url('/cai-food-demo/assets/bg-vn.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
+  font-family: "DM Sans', 'Noto Sans', 'Segoe UI', sans-serif", "Segoe UI", sans-serif;
+  color: #222;
+  padding-bottom: 80px;
+}
+#menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 40px;
+}
+.menuItem {
+  background: rgba(255,255,255,0.88);
+  border-radius: 16px;
+  padding: 16px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease;
+}
+.menuItem:hover {
+  transform: translateY(-2px);
+}
+.menuItem img {
+  width: 100%;
+  border-radius: 12px;
+}
+.menuItem h3 {
+  margin: 10px 0 4px;
+  color: #991100;
+}
+.menuItem p {
+  margin: 0;
+  font-size: 14px;
+}
+body.homepage {
+  background: url('/cai-food-demo/assets/bg-vn.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
+  font-family: "DM Sans', 'Noto Sans', 'Segoe UI', sans-serif", sans-serif;
+  color: #222;
+}
+
+#menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.menuItem {
+  background: rgba(255,255,255,0.92);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+.menuItem img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.menuItem h3 {
+  margin: 8px 0 4px;
+  font-size: 18px;
+}
+.menuItem p {
+  font-size: 14px;
+  margin: 2px 0;
+}
+body.homepage {
+  background: url('/cai-food-demo/assets/bg-vn.jpg') no-repeat center center fixed !important;
+  background-size: cover !important;
+  font-family: "DM Sans', 'Noto Sans', 'Segoe UI', sans-serif", "Segoe UI", sans-serif;
+  color: #222;
+}
+#menuGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+.menuItem {
+  background: rgba(255,255,255,0.95);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  text-align: center;
+}
+.menuItem img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+.menuItem h3 {
+  font-size: 18px;
+  margin: 8px 0 4px;
+}
+.menuItem p {
+  font-size: 14px;
+  margin: 2px 0;
+}
+
+
+/* === Flip Card Menu Styles === */
+.menu-card {
+  perspective: 1000px;
+}
+.menu-card-inner {
+  position: relative;
+  width: 100%;
+  height: 250px;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.menu-card:hover .menu-card-inner {
+  transform: rotateY(180deg);
+}
+.menu-card-front, .menu-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #fff;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.menu-card-front img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+.menu-card-back {
+  transform: rotateY(180deg);
+}
+.menu-card h3 {
+  color: #800000;
+  font-weight: bold;
+  margin: 0.5rem 0 0.25rem 0;
+}
+.menu-card span {
+  font-size: 1rem;
+}
+
+/* === PHASE 34B: Contrast Fixes === */
+.menu-card-front, .menu-card-back {
+  background: rgba(255, 255, 255, 0.92);
+  color: #222;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.4);
+}
+.menu-card h3 {
+  color: gold;
+  font-size: 1.1rem;
+  text-align: center;
+}
+.menu-card span {
+  color: #fefefe;
+  font-weight: bold;
+}
+.menu-card:hover {
+  transform: scale(1.04);
+  box-shadow: 0 8px 18px rgba(255, 211, 105, 0.75);
+  transition: all 0.3s ease-in-out;
+}
+.menu-card-inner {
+  border-radius: 12px;
+  overflow: hidden;
+}
+.menu-card-front img {
+  border-bottom: 3px solid gold;
+}
+
+/* PHASE 35A: Info Section Styles */
+.info-section {
+  padding: 3rem 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+  background: rgba(0, 0, 0, 0.65);
+  border-radius: 12px;
+  color: #fff;
+}
+.info-section h2 {
+  color: gold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.info-box {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 12px #00000080;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #eee;
+}
+
+/* PHASE 1A: Category Dropdown UI */
+.category-filter {
+  margin: 2rem auto;
+  max-width: 300px;
+  text-align: center;
+}
+.category-filter select {
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #111;
+  color: gold;
+  outline: none;
+}
+.category-filter label {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}
+
+/* PHASE 1B: Responsive Grid & Mobile Layout */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  padding: 1rem;
+}
+
+.menu-card {
+  transition: transform 0.2s ease-in-out;
+}
+.menu-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 15px rgba(255, 211, 105, 0.5);
+}
+
+@media (max-width: 768px) {
+  .category-filter {
+    margin: 1rem auto;
+    padding: 0 1rem;
+  }
+
+  .menu-grid {
+    gap: 1.25rem;
+  }
+
+  .menu-card h3 {
+    font-size: 1rem;
+  }
+
+  .menu-card span {
+    font-size: 0.95rem;
+  }
+}
+
+/* PHASE 1C: Order Button Styling */
+.order-btn {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1.1rem;
+  background: gold;
+  color: #111;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.order-btn:hover {
+  background: #ffc400;
+}
+
+/* PHASE 2A: Floating Cart Button */
+#cartIcon {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: gold;
+  color: black;
+  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  border-radius: 40px;
+  font-weight: bold;
+  box-shadow: 0 0 12px #00000070;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#cartCount {
+  background: #111;
+  color: gold;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+/* PHASE 3A: Cart Drawer Styles */
+#cartDrawer {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 360px;
+  height: 100%;
+  background: #111;
+  color: white;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.6);
+  padding: 1rem;
+  transition: right 0.3s ease;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cart-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.cart-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.cart-footer button {
+  flex: 1;
+  padding: 0.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: gold;
+  color: black;
+}
+
+/* PHASE 2E: Food Card Polish */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  justify-content: center;
+}
+
+.menu-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.menu-ca
+
+Set-Location "C:\Users\PhantomX\Documents\cai-food-management"
+
+# ? Inject styles for menu card polish
+Add-Content .\styles\theme.css "`n/* PHASE 2E: Food Card Polish */"
+Add-Content .\styles\theme.css @'
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  justify-content: center;
+}
+
+.menu-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.8rem 0 0.2rem;
+  color: #111;
+}
+
+.menu-card span {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.menu-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 0.75rem;
+}
+
+/* PHASE 2E: Food Card Polish */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem 1rem;
+  justify-content: center;
+}
+
+.menu-card {
+  background: rgba(255,255,255,0.9);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.menu-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.menu-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.menu-card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0.8rem 0 0.2rem;
+  color: #111;
+}
+
+.menu-card span {
+  font-size: 1rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.menu-card p {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 0 0 0.75rem;
+}
+
+/* PHASE 2F: Font Fallback for Vietnamese */
+body {
+  font-family: "DM Sans', 'Noto Sans', 'Segoe UI', sans-serif", "Segoe UI", "Noto Sans", Arial, sans-serif;
+}
+.about-section, .contact-section {
+  color: #fff;
+  background-color: rgba(0,0,0,0.55);
+  padding: 1rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+}

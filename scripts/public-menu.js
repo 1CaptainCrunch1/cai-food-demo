@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+﻿document.addEventListener("DOMContentLoaded", () => {
   fetch("menu-data.json", { headers: { 'Content-Type': 'application/json; charset=utf-8' } })
     .then(res => res.json())
     .then(data => renderMenu(data));
@@ -17,3 +17,4 @@ function renderMenu(items) {
     </div>
   `).join('');
 }
+

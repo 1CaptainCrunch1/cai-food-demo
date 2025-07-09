@@ -1263,3 +1263,30 @@ body {
   font-weight: 700;
   padding-left: 0.5rem;
 }
+/* Phase 2P — Hero Polish */
+.hero {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  backdrop-filter: blur(6px);
+  animation: fadein 1s ease-out;
+}
+.hero-overlay h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.hero-overlay p {
+  font-size: 1.1rem;
+  color: #eee;
+}
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

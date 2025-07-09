@@ -1290,3 +1290,21 @@ body {
   from { opacity: 0; transform: translateY(-10px); }
   to { opacity: 1; transform: translateY(0); }
 }
+
+/* Phase 2P — Header & Menu Visibility Fix */
+.brand-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0;
+  display: block;
+}
+
+.section-title {
+  color: #ffccd5 !important; /* Light pink tone */
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding-left: 0.5rem;
+}

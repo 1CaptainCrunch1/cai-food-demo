@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <title>Dashboard | Cai Food Management</title>
   <style>
-    body {\n  background: url("assets/bg-mg.jpg") no-repeat center center fixed;\n  background-size: cover;
-      margin: 0;
+    body {
       background: url("assets/bg-mg.jpg") no-repeat center center fixed;
       background-size: cover;
+      margin: 0;
       font-family: "DM Sans", sans-serif;
       color: white;
     }
@@ -64,24 +64,27 @@
     }
   </style>
 </head>
-<body class="card-root"><nav id="sidebar"></nav><nav id="sidebar"></nav>
+<body class="card-root">
+  <nav id="sidebar"></nav>
+
   <div class="dashboard">
     <div class="header">Admin Dashboard</div>
     <div class="tab-buttons">
-      <button onclick="switchTab('inventory')">?? Inventory</button>
-      <button onclick="switchTab('costing')">?? Menu Costing</button>
-      <button onclick="switchTab('sales')">?? Sales</button>
-      <button onclick="switchTab('labor')">?? Labor</button>
-      <button onclick="switchTab('fixed')">?? Fixed Costs</button>
-      <button onclick="switchTab('dashboard')">?? Dashboard</button>
-      <button onclick="switchTab('admin')">????? Admin</button>
-      <button onclick="switchTab('access')">?? Access</button>
+      <button onclick="switchTab('inventory')">📦 Inventory</button>
+      <button onclick="switchTab('costing')">💰 Menu Costing</button>
+      <button onclick="switchTab('sales')">💼 Sales</button>
+      <button onclick="switchTab('labor')">👷 Labor</button>
+      <button onclick="switchTab('fixed')">🧾 Fixed Costs</button>
+      <button onclick="switchTab('dashboard')">📊 Dashboard</button>
+      <button onclick="switchTab('admin')">🔧 Admin</button>
+      <button onclick="switchTab('access')">🔐 Access</button>
     </div>
+
     <button class="logout-btn" onclick="logout()">Logout</button>
     <div id="tabContent" class="card">Welcome, loading data...</div>
   </div>
 
-  <!-- Firebase & App -->
+  <!-- Firebase + Modules -->
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
@@ -96,6 +99,7 @@
   <script src="scripts/admin-panel.js"></script>
   <script src="scripts/access.js"></script>
 
+  <!-- Tab Routing Logic -->
   <script>
     function switchTab(tab) {
       switch (tab) {
@@ -120,17 +124,19 @@
     window.onload = () => {
       const role = localStorage.getItem("userRole");
       if (role !== "owner") {
-        document.body.innerHTML = "<h2 style='text-align:center'>? Access Denied</h2>";
+        document.body.innerHTML = "<h2 style='text-align:center'>🚫 Access Denied</h2>";
         return;
       }
       switchTab("dashboard");
     }
+
+    function renderSummary() {
+      const tab = document.getElementById("tabContent");
+      tab.innerHTML = "<p>📊 Summary will go here. Implement real stats from Firestore.</p>";
+    }
   </script>
-  <script src="scripts/owner-bg.js"></script>`n</body>
+
+  <!-- Background control -->
+  <script src="scripts/owner-bg.js"></script>
+</body>
 </html>
-<script>
-function renderSummary() {
-  const summary = document.getElementById("summary");
-  summary.innerHTML = "<p>Welcome, loading data...</p>";
-}
-</script>

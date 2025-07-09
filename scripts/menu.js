@@ -155,3 +155,16 @@ function addToCart(name, price) {
 function getCartCount() {
   return cart.reduce((sum, item) => sum + item.qty, 0);
 }
+/* PHASE 1G: Dropdown Filter Logic */
+function filterCategory(cat) {
+  const sections = document.querySelectorAll("h2 + .menu-grid");
+  const headers = document.querySelectorAll("h2");
+
+  headers.forEach((header, i) => {
+    const grid = sections[i];
+    const tag = header.textContent.toLowerCase();
+    const isMatch = cat === "all" || tag.includes(cat);
+    header.style.display = isMatch ? "block" : "none";
+    grid.style.display = isMatch ? "grid" : "none";
+  });
+}

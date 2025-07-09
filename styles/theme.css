@@ -1338,3 +1338,21 @@ body {
 .brand-title {
   text-shadow: 0 1px 6px rgba(0,0,0,0.8);
 }
+/* Phase 2P — Brand name + Our Menu contrast fix */
+.brand-wrap {
+  display: flex;
+  align-items: center;
+}
+.brand-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+  margin-right: auto;
+}
+.section-title {
+  font-size: 1.6rem;
+  color: #ffebc0;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #000000aa;
+  margin-bottom: 1rem;
+}

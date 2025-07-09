@@ -1356,3 +1356,22 @@ body {
   text-shadow: 1px 1px 2px #000000aa;
   margin-bottom: 1rem;
 }
+/* Phase 2Q – Scroll behavior + card glow + background polish */
+html {
+  scroll-behavior: smooth;
+}
+
+.menu-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.menu-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.15);
+}
+
+.about-section {
+  background-color: rgba(0, 0, 0, 0.65); /* Slightly darker for better blend */
+  transition: background-color 0.3s ease;
+}

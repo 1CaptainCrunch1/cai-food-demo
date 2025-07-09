@@ -1254,3 +1254,12 @@ body {
   text-transform: none;
   letter-spacing: 0.5px;
 }
+
+/* Phase 2O-R — Clean Title Override */
+.site-title {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: 700;
+  padding-left: 0.5rem;
+}

@@ -1059,3 +1059,60 @@ body {
   font-size: 1.125rem;
   color: #f0f0f0;
 }
+
+/* === Phase 2M – Navbar Polish === */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.65);
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #fff3;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+}
+
+.brand-wrap {
+  margin-bottom: 0.25rem;
+}
+
+.brand-title {
+  font-size: 1.8rem;
+  color: #fff;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.nav-links a {
+  color: #ffdbb5;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 4px #ffcc99;
+}
+
+.login-btn {
+  padding: 0.3rem 0.8rem;
+  background-color: #e63946;
+  border-radius: 6px;
+  color: #fff !important;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.login-btn:hover {
+  background-color: #d62828;
+}

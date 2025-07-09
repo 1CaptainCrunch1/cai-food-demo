@@ -54,11 +54,11 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="menu-card-front">
               <img src="img/${d.img}" alt="${d.vn}">
               <h3>${d.vn}</h3>
-              <span>${d.price}</span>
+              <span>${d.price}</span><button class="order-btn" onclick="alert(`Add \${d.vn} to cart`)">🛒 Add</button>
             </div>
             <div class="menu-card-back">
               <h3>${d.en}</h3>
-              <span>${d.price}</span>
+              <span>${d.price}</span><button class="order-btn" onclick="alert(`Add \${d.vn} to cart`)">🛒 Add</button>
             </div>
           </div>
         </div>
@@ -66,3 +66,4 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
   `).join('');
 });
+

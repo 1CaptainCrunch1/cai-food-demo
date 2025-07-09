@@ -256,3 +256,20 @@ body.homepage {
     font-size: 0.95rem;
   }
 }
+
+/* PHASE 1C: Order Button Styling */
+.order-btn {
+  margin-top: 0.75rem;
+  padding: 0.5rem 1.1rem;
+  background: gold;
+  color: #111;
+  font-weight: bold;
+  font-size: 0.95rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.order-btn:hover {
+  background: #ffc400;
+}

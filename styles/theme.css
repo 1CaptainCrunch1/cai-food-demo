@@ -200,3 +200,24 @@ body.homepage {
   line-height: 1.6;
   color: #eee;
 }
+
+/* PHASE 1A: Category Dropdown UI */
+.category-filter {
+  margin: 2rem auto;
+  max-width: 300px;
+  text-align: center;
+}
+.category-filter select {
+  padding: 0.6rem 1rem;
+  font-size: 1.1rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #111;
+  color: gold;
+  outline: none;
+}
+.category-filter label {
+  color: #fff;
+  margin-bottom: 0.5rem;
+  display: inline-block;
+}

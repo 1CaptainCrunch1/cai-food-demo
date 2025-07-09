@@ -1,20 +1,24 @@
 ﻿document.addEventListener("DOMContentLoaded", () => {
-  fetch("menu-data.json", { headers: { 'Content-Type': 'application/json; charset=utf-8' } })
-    .then(res => res.json())
-    .then(data => renderMenu(data));
+  fetch("menu-data.json")
+    .then(res => res.text())
+    .then(text => {
+      const json = JSON.parse(text);
+      renderMenu(json);
+    });
 });
 
 function renderMenu(items) {
   const grid = document.getElementById("menuGrid");
   if (!grid) return;
 
-  grid.innerHTML = items.map(item => `
+  grid.innerHTML = items.map(item => \
     <div class="menuItem">
-      <img src="assets/${item.image || 'placeholder.jpg'}" alt="${item.name}" />
-      <h3>${item.name}</h3>
-      <p>${item.desc}</p>
-      <p><strong>${item.price}</strong></p>
+      <img src="assets/\"
+           alt="Image of \"
+           onerror="this.onerror=null;this.src='assets/placeholder.jpg';" />
+      <h3>\</h3>
+      <p>\</p>
+      <p><strong>\</strong></p>
     </div>
-  `).join('');
+  \).join("");
 }
-

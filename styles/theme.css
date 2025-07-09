@@ -300,3 +300,55 @@ body.homepage {
   font-weight: bold;
   font-size: 1rem;
 }
+
+/* PHASE 3A: Cart Drawer Styles */
+#cartDrawer {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 360px;
+  height: 100%;
+  background: #111;
+  color: white;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.6);
+  padding: 1rem;
+  transition: right 0.3s ease;
+  z-index: 99999;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cart-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.cart-footer {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.cart-footer button {
+  flex: 1;
+  padding: 0.6rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background: gold;
+  color: black;
+}

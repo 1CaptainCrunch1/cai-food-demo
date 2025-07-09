@@ -17,3 +17,14 @@
     `).join('');
   }
 });
+
+/* PHASE 2F: Filter Logic */
+function filterCategory(keyword) {
+  const cards = document.querySelectorAll(".menu-card");
+  cards.forEach(card => {
+    const tag = card.dataset.category || "";
+    const show = keyword === "all" || new RegExp(keyword, "i").test(tag);
+    card.style.display = show ? "flex" : "none";
+  });
+}
+

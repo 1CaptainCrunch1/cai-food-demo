@@ -3,12 +3,14 @@ body.homepage {
   background-size: cover !important;
 }
 
+
 #menuGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 20px;
   padding: 20px;
 }
+
 
 .menuItem {
  background: rgba(255, 255, 255, 0.95);
@@ -212,6 +214,7 @@ body.homepage {
   color: gold;
   border-radius: 999px;
   padding: 0.2rem 0.6rem;
+
   font-weight: bold;
   font-size: 1rem;
 }
@@ -311,6 +314,7 @@ body.homepage {
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   gap: 24px;
   padding: 40px;
+  margin-top: 150px;
 }
 .menuItem {
   background: rgba(255,255,255,0.88);

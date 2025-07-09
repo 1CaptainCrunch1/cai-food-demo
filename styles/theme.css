@@ -490,3 +490,8 @@ Add-Content .\styles\theme.css @'
   color: #666;
   margin: 0 0 0.75rem;
 }
+
+/* PHASE 2F: Font Fallback for Vietnamese */
+body {
+  font-family: "DM Sans", "Segoe UI", "Noto Sans", Arial, sans-serif;
+}

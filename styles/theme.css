@@ -924,6 +924,7 @@ body {
   color: white;
 }
 
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -1085,4 +1086,18 @@ html {
 .about-section {
   background-color: rgba(0, 0, 0, 0.65); /* Slightly darker for better blend */
   transition: background-color 0.3s ease;
+}
+
+/* Style for the Staff Login button container */
+.staff-login-container {
+  margin-left: auto; /* Push the button to the right */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* Distribute items with space between */
+  align-items: center;
+  background: rgba(0,0,0,0.6);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }

@@ -273,3 +273,30 @@ body.homepage {
 .order-btn:hover {
   background: #ffc400;
 }
+
+/* PHASE 2A: Floating Cart Button */
+#cartIcon {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background: gold;
+  color: black;
+  font-size: 1.2rem;
+  padding: 0.75rem 1rem;
+  border-radius: 40px;
+  font-weight: bold;
+  box-shadow: 0 0 12px #00000070;
+  cursor: pointer;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+#cartCount {
+  background: #111;
+  color: gold;
+  border-radius: 999px;
+  padding: 0.2rem 0.6rem;
+  font-weight: bold;
+  font-size: 1rem;
+}

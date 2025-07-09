@@ -1248,3 +1248,9 @@ body {
   margin-bottom: 0.5rem;
   font-size: 1.4rem;
 }
+
+/* Phase 2O — Header Title Patch */
+.site-title {
+  text-transform: none;
+  letter-spacing: 0.5px;
+}

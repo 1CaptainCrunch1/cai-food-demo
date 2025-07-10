@@ -1,1 +1,171 @@
-[{"name":"Bánh mì chả","desc":"Pork Sausage Sandwich","price":"$12.00","image":"placeholder.jpg"},{"name":"Bánh mì gà satay","desc":"Halal Chicken Satay Sandwich","price":"$12.75","image":"placeholder.jpg"},{"name":"Bánh mì thịt nướng","desc":"Grilled Pork Sandwich","price":"$12.75","image":"placeholder.jpg"},{"name":"Bánh mì bò lá lốt","desc":"Betel Leaf Beef Sandwich","price":"$13.75","image":"placeholder.jpg"},{"name":"Xôi mặn","desc":"Savory Sticky Rice","price":"$11.00","image":"placeholder.jpg"},{"name":"Xôi thịt nướng","desc":"Sticky Rice with Grilled Pork","price":"$12.00","image":"placeholder.jpg"},{"name":"Xôi chiên","desc":"Fried Sticky Rice with Pork Floss","price":"$11.50","image":"placeholder.jpg"},{"name":"Bánh gối (2 pcs)","desc":"Fried Dumpling with Pork","price":"$11.00","image":"placeholder.jpg"},{"name":"Gỏi cuốn thịt nướng (2)","desc":"Grilled Pork Spring Rolls","price":"$12.00","image":"placeholder.jpg"},{"name":"Gỏi cuốn bò lá lốt (2)","desc":"Beef Betel Leaf Spring Rolls","price":"$12.75","image":"placeholder.jpg"},{"name":"Gỏi xoài","desc":"Mango Salad with Herbs","price":"$10.75","image":"placeholder.jpg"},{"name":"Gỏi gà","desc":"Chicken Cabbage Salad","price":"$11.50","image":"placeholder.jpg"},{"name":"Gỏi heo","desc":"Pork Salad","price":"$11.50","image":"placeholder.jpg"},{"name":"Cà phê sữa đá","desc":"Vietnamese Iced Coffee","price":"$7.00","image":"placeholder.jpg"},{"name":"Trà đào","desc":"Peach Tea","price":"$6.50","image":"placeholder.jpg"},{"name":"Kem bơ","desc":"Avocado Ice Cream","price":"$9.00","image":"placeholder.jpg"},{"name":"Bún thịt nướng","desc":"Grilled Pork Noodle Bowl","price":"$13.25","image":"placeholder.jpg"},{"name":"Bún chả giò","desc":"Noodle with Spring Roll","price":"$13.25","image":"placeholder.jpg"},{"name":"Cơm tấm","desc":"Broken Rice with Pork & Egg","price":"$13.75","image":"placeholder.jpg"},{"name":"Gỏi cuốn chay","desc":"Veggie Spring Rolls","price":"$10.75","image":"placeholder.jpg"},{"name":"Gỏi cuốn tôm (2)","desc":"Shrimp Spring Rolls","price":"$12.75","image":"placeholder.jpg"},{"name":"Bánh mì chay","desc":"Veggie Tofu Bánh Mì","price":"$11.00","image":"placeholder.jpg"},{"name":"Chè ba màu","desc":"Three-Color Dessert","price":"$8.50","image":"placeholder.jpg"},{"name":"Nước mía","desc":"Sugarcane Juice","price":"$7.00","image":"placeholder.jpg"},{"name":"Combo A","desc":"Bánh mì + Gỏi cuốn + Drink","price":"$20.00","image":"placeholder.jpg"},{"name":"Combo B","desc":"Xôi mặn + Gỏi xoài + Drink","price":"$18.00","image":"placeholder.jpg"},{"name":"Combo C","desc":"Bún + Chả giò + Drink","price":"$22.00","image":"placeholder.jpg"},{"name":"Family Pack","desc":"4 Mains + 4 Rolls + 4 Drinks","price":"$75.00","image":"placeholder.jpg"}]
+﻿[
+    {
+        "name":  "Bánh mì chả",
+        "desc":  "Pork Sausage Sandwich",
+        "price":  "$12.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Bánh mì gà satay",
+        "desc":  "Halal Chicken Satay Sandwich",
+        "price":  "$12.75",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Bánh mì thịt nướng",
+        "desc":  "Grilled Pork Sandwich",
+        "price":  "$12.75",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Bánh mì bò lá lốt",
+        "desc":  "Betel Leaf Beef Sandwich",
+        "price":  "$13.75",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Xôi mặn",
+        "desc":  "Savory Sticky Rice",
+        "price":  "$11.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Xôi thịt nướng",
+        "desc":  "Sticky Rice with Grilled Pork",
+        "price":  "$12.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Xôi chiên",
+        "desc":  "Fried Sticky Rice with Pork Floss",
+        "price":  "$11.50",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Bánh gối (2 pcs)",
+        "desc":  "Fried Dumpling with Pork",
+        "price":  "$11.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Gỏi cuốn thịt nướng (2)",
+        "desc":  "Grilled Pork Spring Rolls",
+        "price":  "$12.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Gỏi cuốn bò lá lốt (2)",
+        "desc":  "Beef Betel Leaf Spring Rolls",
+        "price":  "$12.75",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Gỏi xoài",
+        "desc":  "Mango Salad with Herbs",
+        "price":  "$10.75",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Gỏi gà",
+        "desc":  "Chicken Cabbage Salad",
+        "price":  "$11.50",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Gỏi heo",
+        "desc":  "Pork Salad",
+        "price":  "$11.50",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Cà phê sữa đá",
+        "desc":  "Vietnamese Iced Coffee",
+        "price":  "$7.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Trà đào",
+        "desc":  "Peach Tea",
+        "price":  "$6.50",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Kem bơ",
+        "desc":  "Avocado Ice Cream",
+        "price":  "$9.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Bún thịt nướng",
+        "desc":  "Grilled Pork Noodle Bowl",
+        "price":  "$13.25",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Bún chả giò",
+        "desc":  "Noodle with Spring Roll",
+        "price":  "$13.25",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Cơm tấm",
+        "desc":  "Broken Rice with Pork \u0026 Egg",
+        "price":  "$13.75",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Gỏi cuốn chay",
+        "desc":  "Veggie Spring Rolls",
+        "price":  "$10.75",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Gỏi cuốn tôm (2)",
+        "desc":  "Shrimp Spring Rolls",
+        "price":  "$12.75",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Bánh mì chay",
+        "desc":  "Veggie Tofu Bánh Mì",
+        "price":  "$11.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Chè ba màu",
+        "desc":  "Three-Color Dessert",
+        "price":  "$8.50",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Nước mía",
+        "desc":  "Sugarcane Juice",
+        "price":  "$7.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Combo A",
+        "desc":  "Bánh mì + Gỏi cuốn + Drink",
+        "price":  "$20.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Combo B",
+        "desc":  "Xôi mặn + Gỏi xoài + Drink",
+        "price":  "$18.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Combo C",
+        "desc":  "Bún + Chả giò + Drink",
+        "price":  "$22.00",
+        "image":  "placeholder.jpg"
+    },
+    {
+        "name":  "Family Pack",
+        "desc":  "4 Mains + 4 Rolls + 4 Drinks",
+        "price":  "$75.00",
+        "image":  "placeholder.jpg"
+    }
+]
+
